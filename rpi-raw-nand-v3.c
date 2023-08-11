@@ -41,7 +41,7 @@
 // #define BCM2708_PERI_BASE	0x20000000
 // #define GPIO_BASE	 	(BCM2708_PERI_BASE + 0x200000)
 
-/* For Raspberry 2B and 3B :*/
+/* For Raspberry 2B and 3B(+) :*/
 #define BCM2736_PERI_BASE        0x3F000000
 #define GPIO_BASE                (BCM2736_PERI_BASE + 0x200000) /* GPIO controller */
 
