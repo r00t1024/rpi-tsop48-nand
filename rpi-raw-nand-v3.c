@@ -156,7 +156,7 @@ inline void GPIO_DATA8_OUT(int data)
 }
 
 int delay = 1;
-int shortpause()
+void shortpause()
 {
 	int i;
 	volatile static int dontcare = 0;
@@ -784,6 +784,8 @@ int read_pages(int first_page_number, int number_of_pages, char *outfile, int wr
 	//show cursor
 	// printf("\e[?25h");
 	// fflush(stdout) ;
+	
+	return 0;
 }
 
 
@@ -929,6 +931,8 @@ int write_pages(int first_page_number, int number_of_pages, char *infile)
 	fcloseall();
 	clock_t end = clock();
 	printf("\nWrite done in %f seconds\n", (float)(end - start) / CLOCKS_PER_SEC);
+	
+	return 0;
 }
 
 int erase_blocks(int first_block_number, int number_of_blocks)
@@ -987,4 +991,5 @@ int erase_blocks(int first_block_number, int number_of_blocks)
 	clock_t end = clock();
 	printf("\nErasing done in %f seconds\n", (float)(end - start) / CLOCKS_PER_SEC);
 
+	return 0;
 }
