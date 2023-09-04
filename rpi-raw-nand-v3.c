@@ -55,7 +55,7 @@
 #define COMMAND_LATCH_ENABLE	5
 #define N_READ_ENABLE		6
 #define N_WRITE_ENABLE		7
-#define N_CHIP_ENABLE		22
+// #define N_CHIP_ENABLE		22
 
 int data_to_gpio_map[8] = { 8, 9, 10, 11, 12, 13, 14, 15 }; // 8 is NAND IO 0, etc.
 
