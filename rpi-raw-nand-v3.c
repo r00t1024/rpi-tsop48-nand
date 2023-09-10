@@ -304,7 +304,7 @@ void print_id(unsigned char id[5])
  				case 0xA1: strcpy(device, "K9F1G08R0A"); break;
  				case 0xD5: strcpy(device, "K9GAG08U0M"); break;
  				case 0xF1: strcpy(device, "K9F1G08U0A/B"); break;
- 				case 0xDC: strcpy(device, "K9F4G08U0A"); break;
+ 				case 0xDC: strcpy(device, "K9F4G08U0A/B"); break;
  				default: strcpy(device, "unknown");
  			}
  			break;
